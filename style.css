@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url('./arizo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#game {
+    height: 700px;
+    width: 500px;
+    border: ipx solid black;
+    margin-left: 31rem;
+    background: url('./bg.jpg');
+    background-size: contain;
+    overflow: hidden;
+    animation: move 2s linear infinite;
+}
+
+#bluecar {
+    height: 100px;
+    width: 130px;
+    /* background-color: black; */
+    position: relative;
+    top: 0px;
+    text-align: center;
+    left: 160px;
+    animation: move 2s linear infinite;
+}
+
+#redcar {
+    height: 90px;
+    width: 100px;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    left: 84px;
+    animation: move 3s linear infinite;
+}
+
+#purpulcar {
+    height: 90px;
+    width: 100px;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    left: 84px;
+    animation: move 1.5s linear infinite;
+}
+
+#purpulcar img {
+    height: 100px;
+}
+
+#bluecar img {
+    height: 100px;
+
+}
+
+#redcar img {
+    height: 100px;
+
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+
+    }
+
+    100% {
+        top: 500px;
+    }
+}
+
+#racecar {
+    height: 100px;
+    width: 130px;
+    /* background-color: rgb(221, 26, 26); */
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+    /* animation: move 2s linear infinite; */
+
+}
+
+#racecar img {
+    height: 100px;
+}
+#bluecar h1{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -84px;
+}
+
+#result {
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    display: none;
+
+
+}
+
+#point {
+    font-size: 2.2rem;
+    color: brown;
+
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    #game {
+        height: 800px;
+        width: 500px;
+        border: ipx solid black;
+        margin-left: 1rem;
+        background: url('/bg.jpg');
+        background-size: contain;
+        overflow: hidden;
+    }
+}
